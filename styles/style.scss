@@ -1,0 +1,151 @@
+/* My Notes =>  font-weight 400 700 */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem => 10px */
+}
+body {
+  font-size: 16px; /* Default Font Size => 16px */
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #e6eef5;
+
+  @media screen and (min-height: 700px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
+
+// Components
+.font-regular {
+  font-weight: 400;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+.text-bold {
+  font-size: 2.1rem;
+}
+.text-semibold {
+  font-size: 1.7rem;
+}
+.text-regular {
+  font-size: 1.6rem;
+}
+
+.btn {
+  width: 100%;
+  color: #fff;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 6px 30px -5px,
+    rgba(0, 0, 0, 0.25) 0px 7px 20px -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    background-color: hsl(90, 75%, 50%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 40px -5px,
+      rgba(0, 0, 0, 0.3) 0px 11px 30px -8px;
+  }
+}
+
+.color-cyan {
+  color: hsl(179, 62%, 43%);
+}
+.color-light {
+  color: hsl(204, 43%, 93%);
+}
+.color-gray {
+  color: hsl(218, 22%, 67%);
+}
+.color-green {
+  color: hsl(71, 73%, 54%);
+}
+
+.pad-med {
+  padding: 2.6rem;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 6rem auto;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 30px 0px;
+  line-height: 1.7;
+  overflow: hidden;
+  max-width: 720px;
+}
+
+.first-sec,
+.second-sec,
+.last-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.first-sec {
+  background-color: #fff;
+}
+
+.grid-sec {
+  display: grid;
+  grid-template-columns: none;
+
+  @media screen and (min-width: 750px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.second-sec {
+  background-color: hsl(178, 43%, 49%);
+  color: #fff;
+}
+.second-sec__price {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: hsl(204, 43%, 93%);
+  span:first-child {
+    font-size: 4rem;
+    color: #fff;
+  }
+}
+.second-sec__text {
+  margin-top: -2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.last-sec {
+  background-color: #5cbdbb;
+  color: #fff;
+}
+ul li {
+  list-style: none;
+  color: hsl(204, 43%, 93%);
+}
+
+@media screen and (min-width: 750px) {
+  .pad-med {
+    padding: 4rem;
+  }
+}
